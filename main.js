@@ -16,6 +16,9 @@ async function askAccount() {
     console.log('No accounts available');
     process.exit();
   }
+  else if (accounts.length === 1) {
+    return accounts[0];
+  }
 
   return (await inquirer.prompt([
     {
@@ -28,6 +31,7 @@ async function askAccount() {
 }
 
 async function setAccount(account) {
+  console.log(`Setting account: ${account}`);
   await exec(`gcloud config set account ${account}`);
 }
 
@@ -49,7 +53,6 @@ async function askProject() {
     process.exit();
   }
   if (projects.length === 1) {
-    console.log(`Selecting project (${projects[0]})`)
     return projects[0];
   }
 
@@ -64,6 +67,7 @@ async function askProject() {
 }
 
 async function setProject(project) {
+  console.log(`Setting project: ${project}`);
   await exec(`gcloud config set project ${project}`);
 
   process.exit();
