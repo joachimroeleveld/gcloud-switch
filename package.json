@@ -1,0 +1,36 @@
+{
+  "name": "gcloud-switch",
+  "version": "1.0.0",
+  "description": "Switch gcloud accounts and projects via an interactive prompt",
+  "main": "main.js",
+  "bin": {
+    "gcloud-switch": "./gcloud-switch.js"
+  },
+  "dependencies": {
+    "inquirer": "^6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "publish-patch": "npm version patch && npm publish",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-major": "npm version major && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joachimroeleveld/gcloud-switcher"
+  },
+  "bugs": {
+    "url": "https://github.com/joachimroeleveld/gcloud-switcher/issues"
+  },
+  "author": "Joachim Roeleveld",
+  "license": "MIT",
+  "keywords": [
+    "gcloud",
+    "account",
+    "project",
+    "switch",
+    "interactive",
+    "selector"
+  ],
+  "preferGlobal": true
+}
