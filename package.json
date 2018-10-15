@@ -1,6 +1,6 @@
 {
   "name": "gcloud-switch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Switch gcloud accounts and projects via an interactive prompt",
   "main": "main.js",
   "bin": {
